@@ -8,15 +8,15 @@ node lib/tcp-server.js
 visit url http://localhost:3000/
 
 ##Dev-Dependencies
-"chai"
-"gulp"
-"gulp-eslint"
-"gulp-mocha"
-"mocha"
+* "chai"
+* "gulp"
+* "gulp-eslint"
+* "gulp-mocha"
+* "mocha"
 
 ##Dependencies
-"fs"
-"net"
+* "fs"
+* "net"
 
 ##How to Test
 Run gulp in the Command Line.
