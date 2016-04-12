@@ -1,0 +1,19 @@
+{
+  "name": "carrie-short",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/tcp-server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "mocha": "^2.4.5"
+  }
+}
