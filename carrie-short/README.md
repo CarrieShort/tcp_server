@@ -21,4 +21,4 @@ visit url http://localhost:3000/
 ##How to Test
 Run gulp in the Command Line.
 
-Test checks that a request goes to server and a response is sent. Gulp also lints our code.
+Test checks that a request goes to server and a response is sent and counts the number of files in the logs directory and see if it has increased by one since the beginning of the test. Gulp also lints our code.
