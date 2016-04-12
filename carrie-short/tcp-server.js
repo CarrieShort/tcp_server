@@ -1,19 +1,11 @@
 const net = require ('net');
 const fs = require ('fs')
 
-const writeToFile = fs.createWriteStream(__dirname + '/log_' + Date.now() + '.txt');
+
 
 const server = net.createServer((socket) => {
-  // socket.pipe(process.stdout);
-  // socket.pipe(writeToFile);
-
-  socket.on('data',(data) => {
-    fs.writeFile(__dirname + '/log_' + Date.now() + '.txt', data, (err) => {
-      if (err) throw err;
-      console.log('log was saved');
-    });
-  });
-
+  const writeToFile = fs.createWriteStream(__dirname + '/log_' + Date.now() + '.txt');
+  socket.pipe(writeToFile);
 });
 
 server.listen(3000,() => {
