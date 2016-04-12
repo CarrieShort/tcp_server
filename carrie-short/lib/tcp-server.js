@@ -1,10 +1,10 @@
-const net = require ('net');
-const fs = require ('fs');
+const net = require('net');
+const fs = require('fs');
 
 var dir = __dirname + '/../logs';
 
-if (!fs.existsSync(dir)){
-    fs.mkdirSync(dir);
+if (!fs.existsSync(dir)) {
+  fs.mkdirSync(dir);
 }
 
 const server = net.createServer((socket) => {
@@ -13,7 +13,7 @@ const server = net.createServer((socket) => {
   socket.end('request complete');
 });
 
-server.listen(3000,() => {
+server.listen(3000, () => {
   process.stdout.write('server up on 3000\n');
 });
 
