@@ -5,7 +5,7 @@ const tcp = require(__dirname + '/../lib/tcp-server.js');
 
 describe('TCP Server connection test', () => {
   after(() => {
-    tcp.server.close();
+    tcp.close();
   });
   it('should receive a response \'request complete\' from server', (done) => {
 

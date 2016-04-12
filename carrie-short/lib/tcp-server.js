@@ -17,4 +17,4 @@ server.listen(3000, () => {
   process.stdout.write('server up on 3000\n');
 });
 
-exports.server = server;
+module.exports = server;
